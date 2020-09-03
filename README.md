@@ -1,24 +1,54 @@
-# README
+# アプリ概要
+野球の成績を記録、管理するためのアプリです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# table_setting
 
-Things you may want to cover:
+## users
 
-* Ruby version
+### table
 
-* System dependencies
+| column         | type   | option                    |
+| -------------- | ------ | ------------------------- |
+| name           | string | null: false               |
+| email          | string | null: false, unique: true |
+| password       | string | null: false               |
 
-* Configuration
+### association
 
-* Database creation
+- has_many :at_bats, dependent: :destroy
+- has_many :games, dependent: :destroy
 
-* Database initialization
+## at_bats
 
-* How to run the test suite
+### table
 
-* Services (job queues, cache servers, search engines, etc.)
+| column         | type    | option                  |
+| -------------- | ------- | ----------------------- |
+| pitcher        | string  | null: false, default: 0 |
+| position       | string  | null: false, default: 0 |
+| result         | string  | null: false             |
+| rbi            | integer | null: false, default: 0 |
+| game_id        | integer | null: false             |
+| user_id        | integer | null: false             |
 
-* Deployment instructions
+### association
 
-* ...
+- belongs_to :user
+- belongs_to :game
+
+## games
+
+### table
+
+| column     | type    | option      |
+| ---------- | ------- | ----------- |
+| day        | string  | null: false |
+| team       | string  | null: false |
+| opponent   | string  |             |
+| at_bat_id  | integer | null: false |
+| user_id    | integer | null: false |
+
+### association
+
+- belongs_to :user
+- has_many :at_bats, dependent: :destroy
