@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'at_bats/index'
-
   root "at_bats#index"
+
+  resources :games, only: [:create, :new]
+  
 end
