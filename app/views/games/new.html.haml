@@ -7,10 +7,41 @@
     = link_to "編集"
 
 .index
-  .index__1st
+  .index__6th
     .title
+      【日付】
+      
+  -# .index__7th
+  -#   .title
+  -#     【チーム】
+  -#   .input_select
+      -# = f.text_field :name, placeholder: "40文字まで", type: "text", maxlength: "10"
+  
+  -# .index__7th
+  -#   .title
+  -#     【相手チーム】
+  -#   .input_select
+      -# = f.text_field :name, placeholder: "40文字まで", type: "text", maxlength: "10"
 
+  -# .index__8th
+  -#   .title
+  -#     【試合結果】
+  -#   .result
+  -#     .score
+      -# = f.number_field :score, placeholder: "0", min:"0", max:"99", type: "number"
+      -# .versus
+        対
+      -# .score
+      -# = f.number_field :score, placeholder: "0", min:"0", max:"99", type: "number"
 
+  .index__3rd
+    【打撃成績】
+
+  .index__9th
+    .title
+      第１打席
+    .input_area
+      入力
 
 .footer
   .game_result
