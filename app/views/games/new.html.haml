@@ -10,7 +10,70 @@
   .index__6th
     .title
       【日付】
-      
+    .text_box
+      %select{required: "", class: "text_box"}
+        %option{hidden: "", value: ""} 選択
+        %option{value: "1"} 2020
+        %option{value: "2"} 2021
+        %option{value: "3"} 2022
+        %option{value: "4"} 2023
+    .year
+      年
+    .text_box
+      %select{required: "", class: "text_box"}
+        %option{hidden: "", value: ""} 選択
+        %option{value: "1"} 1
+        %option{value: "2"} 2
+        %option{value: "3"} 3
+        %option{value: "4"} 4
+        %option{value: "5"} 5
+        %option{value: "6"} 6
+        %option{value: "7"} 7
+        %option{value: "8"} 8
+        %option{value: "9"} 9
+        %option{value: "10"} 10
+        %option{value: "11"} 11
+        %option{value: "12"} 12
+    .month
+      月
+    .text_box
+      %select{required: "", class: "text_box"}
+        %option{hidden: "", value: ""} 選択
+        %option{value: "1"} 1
+        %option{value: "2"} 2
+        %option{value: "3"} 3
+        %option{value: "4"} 4
+        %option{value: "5"} 5
+        %option{value: "6"} 6
+        %option{value: "7"} 7
+        %option{value: "8"} 8
+        %option{value: "9"} 9
+        %option{value: "10"} 10
+        %option{value: "11"} 11
+        %option{value: "12"} 12
+        %option{value: "13"} 13
+        %option{value: "14"} 14
+        %option{value: "15"} 15
+        %option{value: "16"} 16
+        %option{value: "17"} 17
+        %option{value: "18"} 18
+        %option{value: "19"} 19
+        %option{value: "20"} 20
+        %option{value: "21"} 21
+        %option{value: "22"} 22
+        %option{value: "23"} 23
+        %option{value: "24"} 24
+        %option{value: "25"} 25
+        %option{value: "26"} 26
+        %option{value: "27"} 27
+        %option{value: "28"} 28
+        %option{value: "29"} 29
+        %option{value: "30"} 30
+        %option{value: "31"} 31
+    .day
+      日
+
+
   -# .index__7th
   -#   .title
   -#     【チーム】
@@ -34,14 +97,67 @@
       -# .score
       -# = f.number_field :score, placeholder: "0", min:"0", max:"99", type: "number"
 
-  .index__3rd
-    【打撃成績】
+  .index__9th
+    .title
+      【打撃成績】
+      .text_box
+        投手
+      .text_box
+        打球方向
+      .text_box
+        結果
+      .text_box
+        打点
 
   .index__9th
     .title
       第１打席
-    .input_area
-      入力
+      .text_box
+        %select{required: "", class: "text_box"}
+          %option{hidden: "", value: ""} 投手
+          %option{value: "1"} 右
+          %option{value: "2"} 左
+
+      .text_box
+        %select{required: "", class: "text_box"}
+          %option{hidden: "", value: ""} 打球方向
+          %option{value: "1"} 投
+          %option{value: "2"} 捕
+          %option{value: "3"} 一
+          %option{value: "4"} 二
+          %option{value: "5"} 三
+          %option{value: "6"} 遊
+          %option{value: "7"} 左
+          %option{value: "8"} 中
+          %option{value: "9"} 右
+
+      .text_box
+        %select{required: "", class: "text_box"}
+          %option{hidden: "", value: ""} 結果
+          %option{value: "1"} 三振
+          %option{value: "2"} ゴロ
+          %option{value: "3"} フライ
+          %option{value: "4"} ライナー
+          %option{value: "5"} エラー
+          %option{value: "6"} 併殺
+          %option{value: "7"} ヒット
+          %option{value: "8"} 二塁打
+          %option{value: "9"} 三塁打
+          %option{value: "10"} 本塁打
+          %option{value: "11"} 四球
+          %option{value: "12"} 死球
+          %option{value: "13"} 犠打
+
+      .text_box
+        %select{required: "", class: "text_box"}
+          %option{hidden: "", value: ""} 打点
+          %option{value: "1"} 0
+          %option{value: "2"} 1
+          %option{value: "3"} 2
+          %option{value: "4"} 3
+          %option{value: "5"} 4
+
+
 
 .footer
   .game_result

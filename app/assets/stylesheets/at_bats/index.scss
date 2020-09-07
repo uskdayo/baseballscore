@@ -141,7 +141,22 @@
     line-height: 200px;
     font-size: 35px;
     padding: 0 30px 0 30px;
-    background-color: pink;
+    .title{
+      margin: 10px;
+    }
+    .text_box{
+      height: 50px;
+      margin: 10px;
+    }
+    .year{
+      margin:10px;
+    }
+    .month{
+      margin:10px;
+    }
+    .day{
+      margin:10px;
+    }
   }
 
   &__7th{
@@ -159,12 +174,44 @@
     font-size: 35px;
     padding: 0 30px 0 30px;
   }
+
   &__9th{
     height: 200px;
     display: flex;
     line-height: 200px;
     font-size: 35px;
     padding: 0 30px 0 30px;
+    // justify-content: space-between;
+    // margin-left: -20px;
+    .title{
+      margin: -13px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .text_box{
+        height: 50px;
+        
+      }
+    }
+  }
+
+  &__10th{
+    height: 200px;
+    display: flex;
+    line-height: 200px;
+    font-size: 35px;
+    padding: 0 30px 0 30px;
+    justify-content: space-between;
+    .title{
+
+    }
+    .input_area{
+
+    }
+    .text_box{
+      height: 50px;
+      margin: 10px;
+    }
   }
 }
 
