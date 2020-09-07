@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'at_bats/index'
+  devise_for :users
 
   root "at_bats#index"
+  resources :users, only: [:edit, :update]
+  resources :games, only: [:create, :new]
+  
 end
