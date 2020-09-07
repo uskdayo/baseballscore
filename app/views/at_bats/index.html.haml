@@ -1,10 +1,10 @@
 .header
   .header__left
-    = link_to "ログアウト"
+    = link_to "ログアウト", destroy_user_session_path, method: :delete
   .header__center
     打撃成績
   .header__right
-    = link_to "編集"
+    = link_to "編集", edit_user_path(current_user)
 
 .index
   .index__1st
