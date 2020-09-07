@@ -5,4 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :name, presence: true, uniqueness: true
+
+  has_many :games, dependent: :destroy
+  has_many :at_bats, dependent: :destroy
 end
