@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200904040821) do
+ActiveRecord::Schema.define(version: 20200907014133) do
+
+  create_table "at_bats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "pitcher",    default: 0, null: false
+    t.integer  "position",   default: 0, null: false
+    t.integer  "result",                 null: false
+    t.integer  "rbi",        default: 0, null: false
+    t.integer  "game_id",                null: false
+    t.integer  "user_id",                null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "games", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "year",       null: false
+    t.integer  "month",      null: false
+    t.integer  "day",        null: false
+    t.string   "team",       null: false
+    t.string   "opponent"
+    t.integer  "run",        null: false
+    t.integer  "given",      null: false
+    t.integer  "user_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                                null: false
