@@ -1,0 +1,168 @@
+.header
+  .header__left
+    = link_to "ログアウト", destroy_user_session_path, method: :delete
+  .header__center
+    試合結果一覧
+  .header__right
+    = link_to "編集", edit_user_path(current_user)
+
+.game_year_top
+  2020年
+.games 
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+
+.game_year
+  2019年
+.games 
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+
+.game_year
+  2018年
+.games 
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+  
+  .game  
+    .game__result
+      .game__result__day
+        9月6日
+      .game__result__score
+        3-4
+      .game__result__team
+        相手チーム
+  .at_bat
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+    .at_bat__result
+      二飛
+  
+.margin
+
+.footer
+  .game_result
+    = link_to "打撃成績", at_bats_path
+  .batting_result
+    = link_to "打撃成績入力", new_game_path

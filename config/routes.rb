@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root "at_bats#index"
+  root "games#index"
   resources :users, only: [:edit, :update]
-  resources :games, only: [:create, :new]
-  
+  resources :games, only: [:index, :create, :new]
+  resources :at_bats, only: :index
 end

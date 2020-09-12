@@ -1,0 +1,47 @@
+.game_year_top{
+  margin-top: 250px;
+  height: 100px;
+  background-color: greenyellow;
+  line-height: 100px;
+  padding-left: 50px;
+  font-size: 40px;
+}
+.game_year{
+  height: 100px;
+  background-color: greenyellow;
+  line-height: 100px;
+  padding-left: 50px;
+  font-size: 40px;
+}
+
+.games{
+  font-size: 40px;
+  padding: 20px;
+  overflow: scroll;
+  .game{
+    padding: 15px;
+    font-weight: bold;
+    &__result{
+      display: flex;
+      &__day{
+        margin-right: 15px;
+      }
+      &__score{
+        margin-right: 15px;
+      }
+      &__team{
+
+      }
+    }
+  }
+  .at_bat{
+    display: flex;
+    &__result{
+      padding: 15px;
+    }
+  }
+}
+
+.margin{
+  height: 250px;
+}
