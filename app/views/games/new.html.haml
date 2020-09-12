@@ -74,28 +74,29 @@
       日
 
 
-  -# .index__7th
-  -#   .title
-  -#     【チーム】
-  -#   .input_select
-      -# = f.text_field :name, placeholder: "40文字まで", type: "text", maxlength: "10"
+  .index__7th
+    .title
+      【チーム】
+    .input_select
+      %input{required: "", class: "text_box"}
+      
   
-  -# .index__7th
-  -#   .title
-  -#     【相手チーム】
-  -#   .input_select
-      -# = f.text_field :name, placeholder: "40文字まで", type: "text", maxlength: "10"
+  .index__7th
+    .title
+      【相手チーム】
+    .input_select
+      %input{required: "", class: "text_box"}
 
-  -# .index__8th
-  -#   .title
-  -#     【試合結果】
-  -#   .result
-  -#     .score
-      -# = f.number_field :score, placeholder: "0", min:"0", max:"99", type: "number"
-      -# .versus
+  .index__8th
+    .title
+      【試合結果】
+    .result
+      .score
+        %input{required: "", class: "text_box"}
+      .versus
         対
-      -# .score
-      -# = f.number_field :score, placeholder: "0", min:"0", max:"99", type: "number"
+      .score
+        %input{required: "", class: "text_box"}
 
   .index__9th
     .title
