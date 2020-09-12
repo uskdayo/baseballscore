@@ -1,0 +1,14 @@
+.header
+  .header__left
+    = link_to "ログアウト", destroy_user_session_path, method: :delete
+  .header__center
+    試合結果一覧
+  .header__right
+    = link_to "編集", edit_user_path(current_user)
+
+
+.footer
+  .game_result
+    = link_to "打撃成績", at_bats_path
+  .batting_result
+    = link_to "打撃成績入力", new_game_path
