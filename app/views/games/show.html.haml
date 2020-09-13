@@ -1,0 +1,88 @@
+.header
+  .header__left
+    = link_to "ログアウト", destroy_user_session_path, method: :delete
+  .header__center
+    試合結果
+  .header__right
+    = link_to "編集", edit_user_path(current_user)
+
+.game_contents
+  .game_contents__date
+    2018年8月20日
+
+  .game_contents__team
+    .my_team
+      .my_team__name
+        ハイエスト
+      .my_team__point
+        5
+    .vs
+      ー
+    .visiter_team
+      .visiter_team__point
+        3
+      .visiter_team__name
+        田中運送
+  
+  .game_record
+    <打撃成績>
+    .game_record__at_bats
+      .at_bat
+        第１打席
+      .record
+        左ヒット
+
+    .game_record__at_bats
+      .at_bat
+        第2打席
+      .record
+        左ヒット
+
+    .game_record__at_bats
+      .at_bat
+        第3打席
+      .record
+        左ヒット
+    
+    .game_record__total
+      <合計>
+      .game_record__total__at_bat
+        .game_record__total__at_bat__count
+          3
+        .game_record__total__atbat__record
+          打席
+        .game_record__total__at_bat__count
+          3
+        .game_record__total__atbat__record
+          打数
+        
+      .game_record__total__hit
+        .game_record__total__hit__count
+          3
+        .game_record__total__hit__record
+          安打
+
+        .game_record__total__hit__count
+          0
+        .game_record__total__hit__record
+          四死球
+
+
+      .game_record__total__run
+        .game_record__total__run__count
+          0
+        .game_record__total__run__record
+          打点
+
+  
+
+
+
+
+.margin
+
+.footer
+  .game_result
+    = link_to "打撃成績", at_bats_path
+  .batting_result
+    = link_to "打撃成績入力", new_game_path
