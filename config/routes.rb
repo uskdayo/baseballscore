@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   root "games#index"
   resources :users, only: [:edit, :update]
-  resources :games, only: [:index, :create, :new]
+  resources :games, only: [:index, :create, :new, :show]
   resources :at_bats, only: :index
 end

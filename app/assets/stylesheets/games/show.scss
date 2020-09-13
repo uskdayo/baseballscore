@@ -1,0 +1,55 @@
+.game_contents{
+  padding: 250px 40px 40px 40px;
+  font-size: 50px;
+  &__date{
+    margin: 20px;
+
+  }
+  &__team{
+    display: flex;
+    margin: 20px;
+    .my_team{
+      display: flex;
+      &__name{
+
+      }
+      &__point{
+
+      }
+    }
+    .vs{
+
+    }
+    .visiter_team{
+      display: flex;
+      &__point{
+
+      }
+      &__name{
+
+      }
+    }
+  }
+  .game_record{
+    margin: 50px 20px;
+    &__at_bats{
+      display: flex;
+      .at_bat{
+        margin-right: 30px;
+        width: 200px;
+      }
+    }
+    &__total{
+      margin-top: 40px;
+      &__at_bat{
+        display: flex;
+      }
+      &__hit{
+        display: flex;
+      }
+      &__run{
+        display: flex;
+      }
+    }
+  }
+}
